@@ -31,12 +31,12 @@ public class TelegramBotCoba extends TelegramLongPollingBot {
 
                 commandFactory.createCommand(commandIdentifier).execute(update);
             } else {
-                SendMessage sendMessage = new SendMessage(); // Create a SendMessage object with mandatory fields
+                SendMessage sendMessage = new SendMessage();
                 sendMessage.setChatId(update.getMessage().getChatId().toString());
                 sendMessage.setText(update.getMessage().getText());
 
                 try {
-                    execute(sendMessage); // Call method to send the message
+                    execute(sendMessage);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
