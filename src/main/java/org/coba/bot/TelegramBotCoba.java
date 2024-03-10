@@ -45,6 +45,6 @@ public class TelegramBotCoba extends TelegramLongPollingBot {
     }
     @Override
     public String getBotUsername() {
-        return "course_maria_bot";
+        return "kkk_bot";
     }
 }
